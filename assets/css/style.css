@@ -47,6 +47,11 @@ hr {
   color: var(--light);
 }
 
+/* Carousel  */
+.carousel-indicators li {
+  background-color: var(--light);
+}
+
 /* Header */
 .hero-section {
   color: var(--white);

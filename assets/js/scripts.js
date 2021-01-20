@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 // Smoth Scroll
 $('a').click(function (event) {
   if (this.hash !== '') {
