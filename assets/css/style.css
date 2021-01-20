@@ -108,3 +108,24 @@ hr {
 #works .card-body {
   color: var(--dark);
 }
+
+/* Contact, Footer */
+#footer {
+  padding: 2rem 1rem 2rem;
+}
+
+/* Footer */
+#footer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#footer a {
+  color: var(--light);
+}
+
+#footer a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
