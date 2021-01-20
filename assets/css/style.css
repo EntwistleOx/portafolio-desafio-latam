@@ -1,1 +1,48 @@
-  
+:root {
+  --dark: #011627;
+  --light: #bec5d4;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.8rem;
+  color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600 !important;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100px;
+  border-top: 2px solid var(--light);
+}
+
+/* bg-color */
+.bg-owl {
+  background: var(--dark);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 600;
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--light);
+}
