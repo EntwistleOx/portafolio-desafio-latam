@@ -52,6 +52,22 @@ hr {
   background-color: var(--light);
 }
 
+/* Cards */
+.card {
+  background: var(--light);
+  border-color: var(--dark);
+}
+
+/* Modal */
+.modal-dialog,
+.modal-content {
+  height: 95%;
+}
+
+.modal-body {
+  max-height: 100vh;
+}
+
 /* Header */
 .hero-section {
   color: var(--white);
@@ -75,4 +91,20 @@ hr {
 #about {
   color: var(--dark);
   padding: 2rem 1rem 2rem;
+}
+
+/* Experience, Contact */
+#experience,
+#contact {
+  color: var(--dark);
+  padding: 4rem 1rem 4rem;
+}
+
+/* Works */
+#works {
+  padding: 4rem 1rem 6rem;
+}
+
+#works .card-body {
+  color: var(--dark);
 }

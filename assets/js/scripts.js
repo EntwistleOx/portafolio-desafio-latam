@@ -20,3 +20,8 @@ $('a').click(function (event) {
     );
   }
 });
+
+// Iframe en Modal
+$('.card').click(function () {
+  $('#modal-iframe').attr('src', $(this).attr('my-url'));
+});
