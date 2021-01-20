@@ -46,3 +46,28 @@ hr {
 .navbar-dark .navbar-brand {
   color: var(--light);
 }
+
+/* Header */
+.hero-section {
+  color: var(--white);
+  background: url('../img/header.jpg') no-repeat center center/cover;
+}
+
+.hero-section h2 {
+  font-size: 1.5rem;
+}
+
+.hero-section hr {
+  width: 216px;
+  border-top: 2px solid var(--light);
+}
+
+.hero-section .hero-container {
+  padding: 4rem 1rem;
+}
+
+/* About */
+#about {
+  color: var(--dark);
+  padding: 2rem 1rem 2rem;
+}
