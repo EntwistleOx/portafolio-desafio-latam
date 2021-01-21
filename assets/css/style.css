@@ -1,13 +1,15 @@
 :root {
   --dark: #011627;
-  --light: #bec5d4;
+  --cream: #bec5d4;
+  /* --soft: #1d3b53; */
+  --soft: #5f7d97;
   --white: #ffffff;
 }
 
 body {
   font-family: 'Fira Code', monospace;
   line-height: 1.8rem;
-  color: var(--light);
+  color: var(--cream);
 }
 
 h1,
@@ -23,19 +25,32 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
   width: 100px;
-  border-top: 2px solid var(--light);
+  border-top: 2px solid var(--cream) !important;
 }
 
 /* bg-color */
-.bg-owl {
+.bg-owl-dark {
   background: var(--dark);
+}
+
+.bg-owl-light {
+  background: var(--soft);
+}
+
+/* Text */
+.text-dark {
+  color: var(--dark);
+}
+
+.lead {
+  font-size: 1.41rem;
 }
 
 /* Navbar */
@@ -44,18 +59,26 @@ hr {
 }
 
 .navbar-dark .navbar-brand {
-  color: var(--light);
+  color: var(--cream);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--soft);
 }
 
 /* Carousel  */
 .carousel-indicators li {
-  background-color: var(--light);
+  background-color: var(--cream);
 }
 
 /* Cards */
 .card {
-  background: var(--light);
+  background: var(--soft);
   border-color: var(--dark);
+}
+
+.card-body {
+  color: var(--cream);
 }
 
 /* Modal */
@@ -70,7 +93,7 @@ hr {
 
 /* Header */
 .hero-section {
-  color: var(--white);
+  /* color: var(--white); */
   background: url('../img/header.jpg') no-repeat center center/cover;
 }
 
@@ -79,34 +102,31 @@ hr {
 }
 
 .hero-section hr {
-  width: 216px;
-  border-top: 2px solid var(--light);
+  width: 271px;
+  border-top: 2px solid var(--cream);
 }
 
+/* Overlay */
 .hero-section .hero-container {
-  padding: 4rem 1rem;
+  background-color: rgba(1, 22, 39, 0.6);
 }
 
 /* About */
 #about {
-  color: var(--dark);
-  padding: 2rem 1rem 2rem;
+  /* color: var(--dark); */
+  padding: 4rem 1rem 4rem;
 }
 
 /* Experience, Contact */
 #experience,
 #contact {
-  color: var(--dark);
+  /* color: var(--dark); */
   padding: 4rem 1rem 4rem;
 }
 
 /* Works */
 #works {
   padding: 4rem 1rem 6rem;
-}
-
-#works .card-body {
-  color: var(--dark);
 }
 
 /* Contact, Footer */
@@ -122,7 +142,7 @@ hr {
 }
 
 #footer a {
-  color: var(--light);
+  color: var(--cream);
 }
 
 #footer a:hover {
@@ -136,7 +156,7 @@ hr {
   }
 
   .hero-section hr {
-    width: 695px;
+    width: 688px;
   }
 
   .hero-section h2 {

@@ -33,11 +33,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-owl">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-owl-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <span class="d-none d-lg-block">Juan Díaz Ortega</span>
-          <span class="d-block d-lg-none">JD</span>
+          <span class="d-none d-lg-block text-uppercase">Juan Díaz Ortega</span>
+          <span class="d-block d-lg-none text-uppercase">jd</span>
         </a>
         <button
           class="navbar-toggler"
@@ -62,69 +62,50 @@
     </nav>
 
     <!-- Header -->
-    <header
-      id="hero"
-      class="hero-section vh-100 d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="hero-container text-center">
-        <h1>Juan Díaz Ortega</h1>
-        <p class="lead">Desarrollador Web</p>
+    <header id="hero" class="hero-section">
+      <div
+        class="vh-100 d-flex flex-column justify-content-center align-items-center hero-container text-center"
+      >
+        <h1 class="text-uppercase">Juan Díaz Ortega</h1>
+        <p class="lead mb-0">Desarrollador Web 💻</p>
         <hr />
-        <h2>Bienvenido a mi portafolio 💻</h2>
+        <div>
+          <a class="btn btn-outline-light" href="#works"> Mis Trabajos </a>
+          <a class="btn btn-light" href="#contact">Contáctame</a>
+        </div>
       </div>
     </header>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="bg-owl-dark">
       <div class="container">
-        <!-- <h2 class="text-center">Sobre Mi</h2> -->
+        <h2 class="text-center">Sobre Mi</h2>
         <hr />
-        <h3 class="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit
-          lectus.
-        </h3>
-        <hr />
+        <!-- <h3 class="text-center mb-4"></h3> -->
         <div class="row text-center text-md-left">
           <div class="col-md-6">
-            I'm a Web Developer located in Santiago, Chile, and I like to build
-            things with Javascript from back to front. I'm a curious and
-            self-taught guy passionate about web technologies, always working on
-            improve my skills sparkles Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec mattis ante nulla. Donec in neque
-            consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum
-            turpis et dolor euismod consequat sed sed ante. Curabitur vel
-            lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
-            risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in,
-            finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique
-            ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris
-            ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac
-            orci id neque posuere aliquam.
+            Hola 👋, bienvenido a mi portafolio, mi nombre es Juan Díaz Ortega,
+            soy un programador de Santiago de Chile, y me gusta hacer proyectos
+            con Javascript de back a front. Casi siempre he sido autodidacta y
+            me encanta investigar acerca de nuevas tecnologias.
           </div>
           <div class="col-md-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            mattis ante nulla. Donec in neque consectetur, ultrices justo eu,
-            hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat
-            sed sed ante. Curabitur vel lacinia nisi. Sed mollis condimentum
-            rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem,
-            mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
-            id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum
-            eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis
-            in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum
-            nibh luctus. Nam ac orci id neque posuere aliquam.
+            Aca se recopilan los proyectos que he desarrollado para el modulo 1
+            de la carrera Front End con VueJS de Desafio Latam. La mayoria de
+            los proyectos estan desarrollados bajo mobile first y usan CSS5,
+            Bootstrap, JQuery como tecnologias.
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience">
+    <section id="experience" class="bg-owl-light">
       <div class="container text-center">
         <h2>Experiencia</h2>
         <hr />
         <!-- Inicio Carousel -->
-        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+        <div id="blogCarousel" class="carousel slide mt-5" data-ride="carousel">
           <!-- Inicio  Inner -->
           <div class="carousel-inner">
             <!-- Inicio 1 item -->
@@ -140,7 +121,7 @@
                   <img
                     src="./assets/img/2call.png"
                     alt="slider 1"
-                    class="img-fluid mb-2"
+                    class="img-fluid rounded-circle mb-2"
                   />
                   <h3>2CALL SPA</h3>
                   <p>2019 - a la fecha</p>
@@ -149,7 +130,7 @@
                   class="col-12 col-md-6 mb-3"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Desarrollo Web con PHP, Codeigniter, MySQL, MSSQL, Bootstrap, JQuery. Soporte informatico a tiendas, ofimatica, instalacion y configuracion Raspberry PI Linux/CentOS."
+                  title="Desarrollo Web con PHP, Codeigniter, SOAP, WS, MySQL, MSSQL, PostgreSQL, Bootstrap, JQuery. Soporte informatico a tiendas, mantencion de DBs, ofimatica, configuracion Raspberry PI con Debian."
                 >
                   <img
                     src="./assets/img/dominos.png"
@@ -172,7 +153,7 @@
                   title="Desarrollo Web con PHP, Joomla, MSSQL, Bootstrap, JQuery."
                 >
                   <img
-                    src="./assets/img/palumbo.png"
+                    src="./assets/img/palumbo-min.png"
                     alt="slider 3"
                     class="img-fluid mb-2"
                   />
@@ -183,7 +164,7 @@
                   class="col-12 col-md-6 mb-3"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Desarrollo Web con PHP, Bootstrap, JQuery"
+                  title="Desarrollo Web con PHP, Wordpress, Bootstrap, JQuery"
                 >
                   <img
                     src="./assets/img/insotec.png"
@@ -214,7 +195,7 @@
     </section>
 
     <!-- Works -->
-    <section id="works" class="bg-owl">
+    <section id="works" class="bg-owl-dark">
       <div class="container">
         <h2 class="text-center">Ultimos Trabajos</h2>
         <hr />
@@ -235,8 +216,7 @@
               <div class="card-body">
                 <h3 class="card-title text-center">Malditos Bastardos</h3>
                 <p class="mb-0 text-center text-md-left">
-                  Barberia clasica, cortes de cabello y afeitado de barba.
-                  Buenos Aires, Argentina
+                  Barberia clasica. Buenos Aires, Argentina.
                 </p>
               </div>
             </div>
@@ -351,7 +331,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container">
+    <section id="contact" class="container-fluid bg-owl-light">
       <h2 class="text-center">Contacto</h2>
       <hr />
       <div
@@ -386,21 +366,21 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-owl">
+    <footer id="footer" class="bg-owl-dark">
       <div
         class="container d-flex flex-column flex-md-row justify-content-around align-items-center align-items-md-baseline"
       >
-        <p>Juan Díaz Ortega</p>
+        <p class="text-uppercase">Juan Díaz Ortega</p>
 
         <div>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/EntwistleOx" target="_blank">
             <i class="fab fa-github-square fa-3x"></i>
           </a>
-          <a href="https://linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/juan-d%C3%ADaz-77381a186/"
+            target="_blank"
+          >
             <i class="fab fa-linkedin fa-3x"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <i class="fab fa-twitter-square fa-3x"></i>
           </a>
         </div>
       </div>
