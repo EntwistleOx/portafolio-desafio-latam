@@ -9,7 +9,7 @@
 body {
   font-family: 'Fira Code', monospace;
   line-height: 1.8rem;
-  color: var(--cream);
+  color: var(--cream) !important;
 }
 
 h1,
