@@ -35,7 +35,7 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-owl-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#hero">
           <span class="d-none d-lg-block text-uppercase">Juan Díaz Ortega</span>
           <span class="d-block d-lg-none text-uppercase">jd</span>
         </a>
@@ -44,9 +44,6 @@
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,7 +74,7 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="bg-owl-dark">
+    <section id="about" class="bg-owl-dark d-none d-sm-block">
       <div class="container">
         <h2 class="text-center">Sobre Mi</h2>
         <hr />
@@ -115,8 +112,7 @@
                   class="col-12 col-md-6 mb-3"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Desarrollo Web / Telefonia VoIP con Asterisk, NodeJS, Express,
-            MongoDB, PosgreSQL, MSSQL, Bootstrap, React, Redux."
+                  title="Desarrollo Web / Telefonia VoIP con Asterisk, NodeJS, Express, MongoDB, PosgreSQL, MSSQL, Bootstrap, React, Redux."
                 >
                   <img
                     src="./assets/img/2call.png"
@@ -202,11 +198,11 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="malditos"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://malditos-bastardos.vercel.app/"
+              data-my-url="https://malditos-bastardos.vercel.app/"
             >
               <img
                 src="./assets/img/malditos.png"
@@ -223,11 +219,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="ricomida"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://entwistleox.github.io/ricomida"
+              data-my-url="https://entwistleox.github.io/ricomida"
             >
               <img
                 src="./assets/img/ricomida.png"
@@ -244,11 +240,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="suricata"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://entwistleox.github.io/suricata/"
+              data-my-url="https://entwistleox.github.io/suricata/"
             >
               <img
                 src="./assets/img/suricata.png"
@@ -265,11 +261,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="cuppon"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://entwistleox.github.io/cuppon/"
+              data-my-url="https://entwistleox.github.io/cuppon/"
             >
               <img
                 src="./assets/img/cuppon.png"
@@ -286,11 +282,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="iguana"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://entwistleox.github.io/iguana-page/"
+              data-my-url="https://entwistleox.github.io/iguana-page/"
             >
               <img
                 src="./assets/img/iguana_page.png"
@@ -307,11 +303,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3">
             <div
-              class="card rounded-0"
+              class="card border-0 rounded-0"
               id="meetcoffe"
               data-toggle="modal"
               data-target="#modal"
-              my-url="https://entwistleox.github.io/meet-coffee/"
+              data-my-url="https://entwistleox.github.io/meet-coffee/"
             >
               <img
                 src="./assets/img/meet_coffee.png"
@@ -387,13 +383,7 @@
     </footer>
 
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modal"
-      tabindex="-1"
-      aria-labelledby="modalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="modal">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body p-0">

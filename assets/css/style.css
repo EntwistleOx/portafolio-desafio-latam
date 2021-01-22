@@ -10,6 +10,7 @@ body {
   font-family: 'Fira Code', monospace;
   line-height: 1.8rem;
   color: var(--cream) !important;
+  line-height: 2rem;
 }
 
 h1,
@@ -74,7 +75,7 @@ hr {
 /* Cards */
 .card {
   background: var(--soft);
-  border-color: var(--dark);
+  /* border-color: var(--dark); */
 }
 
 .card-body {
